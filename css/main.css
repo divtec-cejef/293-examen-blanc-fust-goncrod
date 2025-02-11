@@ -105,4 +105,30 @@ main {
 
 footer {
     text-align : center;
+    background-color: #151515;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Page accueil */
+
+/* Conteneur Flexbox */
+.page-produits .produits {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Acrive le Flexbox */
+    flex-wrap: wrap; /* Les éléments passent à la ligne si besoin */
+}
+
+/* Les éléments du conteneur Flexbox */
+.page-produits .produits li {
+    flex-basis: 50%; /* Largeur de base 50% */
+    flex-grow: 2; /* Prend 2 fois plus de place */
+    padding: 10px;
+    border: 2px solid #151515;
+}
+
+.page-produits .produits figure {
+    margin: 0;
 }
