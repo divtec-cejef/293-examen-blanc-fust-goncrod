@@ -17,7 +17,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
-
+h2 {
+    color : #ff8800;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -99,4 +101,8 @@ main {
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
+}
+
+footer {
+    text-align : center;
 }
