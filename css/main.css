@@ -17,9 +17,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 800;
 }
-h2 {
-    color : #ff8800;
-}
+
 img {
     max-width: 100%;
     height: auto;
@@ -30,6 +28,16 @@ a {
     color: #ff8800;
 }
 
+a:hover {
+    color: #666666;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
 /********** STYLE HEADER *********/
 header {
     padding: 1rem;
@@ -38,6 +46,10 @@ header {
 }
 
 /********** STYLE NAVIGATION *********/
+
+header .logo {
+    max-height: 80px;
+}
 
 header nav ul {
     padding: 0;
@@ -71,14 +83,30 @@ main {
     margin: 0 auto;
 }
 
+/********** STYLE FOOTER *********/
+footer {
+    background-color: #151515;
+    margin-top: 2rem;
+    padding: 20px 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /********** PAGE NOS PRODUITS *********/
 .produits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     padding: 0;
 }
 
 .produits li {
-    padding: 2% 1rem;
+    flex-basis: calc(50% - 20px); margin: 10px;
+
+
+    /*padding: 2% 1rem;*/
     transition: all 0.2s ease-in-out;
 }
 
@@ -98,37 +126,8 @@ main {
 }
 
 .produits figcaption h2 {
+    color: #ff8800;
     text-align: center;
     margin: .5em 0 0;
     line-height: 1.1;
-}
-
-footer {
-    text-align : center;
-    background-color: #151515;
-    color: #ffffff;
-    padding: 10px;
-}
-
-/* Page accueil */
-
-/* Conteneur Flexbox */
-.page-produits .produits {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Acrive le Flexbox */
-    flex-wrap: wrap; /* Les éléments passent à la ligne si besoin */
-}
-
-/* Les éléments du conteneur Flexbox */
-.page-produits .produits li {
-    flex-basis: 50%; /* Largeur de base 50% */
-    flex-grow: 2; /* Prend 2 fois plus de place */
-    padding: 10px;
-    border: 2px solid #151515;
-}
-
-.page-produits .produits figure {
-    margin: 0;
 }
